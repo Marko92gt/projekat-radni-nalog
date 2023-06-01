@@ -1,0 +1,7 @@
+{
+  "name": "ionic-radni-nalog",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

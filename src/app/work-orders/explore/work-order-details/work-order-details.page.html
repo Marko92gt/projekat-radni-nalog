@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+
+
+
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button (click)="openAlert()">
+        <ion-icon name="close-circle-outline" color="tertiary"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Radni nalog</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size-sm="6" offset-sm="3">
+        <ion-item>
+          <ion-text>{{workOrder.title}}</ion-text>
+
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size-sm="6" offset-sm="3">
+        <ion-item>
+          <ion-text>Klijent: </ion-text>
+          <ion-text>{{workOrder.clientName}}</ion-text>
+
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size-sm="6" offset-sm="3">
+        <ion-item>
+          <ion-text>Opis: </ion-text>
+          <ion-text>{{workOrder.description}}</ion-text>
+
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+
+
+  </ion-grid>
+</ion-content>
